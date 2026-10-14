@@ -44,7 +44,7 @@ Requirements: React + Tailwind v4 project with the `@` alias and a `components.j
 
    ```json
    "registries": {
-     "@glow": "https://<glow-ui-domain>/r/{name}.json"
+     "@glow": "https://glow-ui.vercel.app/r/{name}.json"
    }
    ```
 
@@ -65,4 +65,4 @@ Components land in `components/ui/` together with their stories and belong to th
 
 ## Deploy (Vercel)
 
-Import the repo in Vercel; `vercel.json` already sets the build command and output. Storybook is served at `/`, the registry at `/r/{name}.json`.
+Deployed at **https://glow-ui.vercel.app** — Storybook at `/`, registry at `/r/{name}.json`. Every push to `main` redeploys; `vercel.json` sets the build command and output.
