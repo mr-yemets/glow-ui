@@ -1,0 +1,42 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "glow",
+  "homepage": "https://github.com/mr-yemets/glow-ui",
+  "items": [
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "Utils",
+      "description": "cn() helper for merging Tailwind classes.",
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        { "path": "registry/glow/lib/utils.ts", "type": "registry:lib" }
+      ]
+    },
+    {
+      "name": "theme",
+      "type": "registry:file",
+      "title": "Glow theme",
+      "description": "Glow tokens as a Tailwind v4 theme. Import it in your main CSS after tailwindcss.",
+      "files": [
+        {
+          "path": "registry/glow/styles/glow-theme.css",
+          "type": "registry:file",
+          "target": "styles/glow-theme.css"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Test component for the scaffold. Replaced by the real Glow Button in step 6.",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "registryDependencies": ["@glow/utils"],
+      "files": [
+        { "path": "registry/glow/ui/button.tsx", "type": "registry:ui" },
+        { "path": "registry/glow/ui/button.stories.tsx", "type": "registry:ui" }
+      ]
+    }
+  ]
+}

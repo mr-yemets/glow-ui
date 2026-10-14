@@ -1,0 +1,51 @@
+/*
+ * Glow theme — PLACEHOLDER.
+ * Real values will be generated from Figma variables in step 3 (tokens).
+ * Do not hand-edit once the token pipeline exists.
+ *
+ * The default Tailwind palette is switched off: only Glow tokens can be used.
+ */
+
+@theme {
+  /* Disable Tailwind's default colors, radii and shadows */
+  --color-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+
+  /* Semantic tokens (placeholder values) */
+  --color-background: var(--glow-background);
+  --color-foreground: var(--glow-foreground);
+  --color-primary: var(--glow-primary);
+  --color-primary-foreground: var(--glow-primary-foreground);
+  --color-secondary: var(--glow-secondary);
+  --color-secondary-foreground: var(--glow-secondary-foreground);
+  --color-border: var(--glow-border);
+  --color-ring: var(--glow-ring);
+
+  --radius-control: var(--glow-radius-control);
+}
+
+/* Modes: themes switch values, never names */
+:root,
+[data-theme="light"] {
+  --glow-background: #ffffff;
+  --glow-foreground: #0b0b0f;
+  --glow-primary: #5b4cff;
+  --glow-primary-foreground: #ffffff;
+  --glow-secondary: #f1f0f7;
+  --glow-secondary-foreground: #0b0b0f;
+  --glow-border: #dcdbe6;
+  --glow-ring: #5b4cff;
+  --glow-radius-control: 8px;
+}
+
+[data-theme="dark"] {
+  --glow-background: #0b0b0f;
+  --glow-foreground: #f5f5fa;
+  --glow-primary: #7a6dff;
+  --glow-primary-foreground: #0b0b0f;
+  --glow-secondary: #1c1b24;
+  --glow-secondary-foreground: #f5f5fa;
+  --glow-border: #2c2b36;
+  --glow-ring: #7a6dff;
+}

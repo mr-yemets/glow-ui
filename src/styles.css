@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "../registry/glow/styles/glow-theme.css";
+
+@source "../registry";
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
